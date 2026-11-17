@@ -1,0 +1,8 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: .Dockerfile
+    image: car-price-a1:latest
+    ports:
+      - "8050:8050"     # your Mac's port : the container's port
